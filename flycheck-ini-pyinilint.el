@@ -4,7 +4,7 @@
 
 ;; Author: Daniel J. R. May <daniel.may@danieljrmay.com>
 ;; URL: https://gitlab.com/danieljrmay/flycheck-ini-pyinilint
-;; Package-Requires: ((flycheck "30")) TODO which version
+;; Package-Requires: ((flycheck "31"))
 ;; Created: 8 March 2019
 ;; Version: 0.1.0
 ;; Keywords: convenience, languages, tools
@@ -22,10 +22,11 @@
   "A INI-file checker using PyINILint.
 
 See URL `https://gitlab.com/danieljrmay/pyinilint'."
-  :command ("pyinilint" source)
+  :command ("pyinilint" "--interpolate" source)
   :error-patterns (
-    (error line-start "[ERROR] " (message) ": '" (file-name) "'" line-end)
-    (error line-start "[line " line "]: '" (message) "'" line-end))
+		   (info line-start "[WARNING] " (id (one-or-more not-newline)) " at line " line " of " (file-name) ": " (message) line-end)
+		   (error line-start "[ERROR] " (id (one-or-more not-newline)) " at line " line " of " (file-name) ": " (message) line-end)
+		   )
   :modes conf-colon-mode)
 
 (provide 'flycheck-ini-pyinilint)
