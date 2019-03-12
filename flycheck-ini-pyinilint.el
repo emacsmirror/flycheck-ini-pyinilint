@@ -3,11 +3,11 @@
 ;; Copyright 2019 Daniel J. R. May
 
 ;; Author: Daniel J. R. May <daniel.may@danieljrmay.com>
-;; URL: <https://gitlab.com/danieljrmay/flycheck-ini-pyinilint>
+;; URL: https://gitlab.com/danieljrmay/flycheck-ini-pyinilint
 ;; Package-Requires: ((flycheck "31"))
-;; Created: 8 March 2019
-;; Version: 0.1.0
-;; Keywords: flycheck, INI, pyinilint
+;; Created: 12 March 2019
+;; Version: 0.3
+;; Keywords: convenience, files, tools
 
 ;; This program is free software: you can redistribute it and/or
 ;; modify it under the terms of the GNU General Public License as
