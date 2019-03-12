@@ -59,7 +59,11 @@ See URL `https://gitlab.com/danieljrmay/pyinilint'."
 			  ": " (message) line-end) )
   :modes conf-colon-mode)
 
-(add-to-list 'flycheck-checkers 'ini-pyinilint)
+;;;###autoload
+(defun flycheck-ini-pyinilint-setup()
+  "Setup Flycheck PyINILint integration."
+  (interactive)
+  (add-to-list 'flycheck-checkers 'ini-pyinilint))
 
 (provide 'flycheck-ini-pyinilint)
 ;;; flycheck-ini-pyinilint.el ends here
