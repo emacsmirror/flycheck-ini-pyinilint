@@ -7,9 +7,16 @@ Get INI-file syntax checking in
 
 ## Installation
 
-### Install `pyinilint`
+You need to install two things to get things working:
 
-#### Install `pyinilint` via Copr (recommended)
+* The `pyinilint` command line tool which provides the INI-syntax
+  checking backend.
+* The `flycheck-ini-pyinilint` Emacs package, which provides the
+  integration between Emacs and `pyinilint`.
+
+### Install PyINILint
+
+#### PyINILint installation via Copr (recommended)
 
 If you use Fedora or a compatible Linux distribution you can install
 PyINILint via a [Copr
@@ -22,7 +29,7 @@ dnf install pyinilint
 
 This RPM based version includes a man page and Bash completion script.
 
-#### Install `pyinilint` via PyPi
+#### PyINILint installation via PyPi
 
 If you have `pip` on your system then you can install from
 [PyPi](https://pypi.org/project/pyinilint/).
@@ -32,16 +39,16 @@ pip install pyinilint
 ```
 
 However, this distribution currently does not include the man page or
-Bash completion script. 😥
+Bash completion script. 😞
 
-#### Install `pyinilint` from source
+#### PyINILint installation from source
 
 Otherwise you will have to [install PyINILint from
 source](https://gitlab.com/danieljrmay/pyinilint).
 
 ### Install `flycheck-ini-pyinilint`
 
-#### Install `flycheck-ini-pyinilint` via MELPA (recommended)
+#### `flycheck-ini-pyinilint` installation via MELPA (recommended)
 
 * You can install this package in Emacs directly from MELPA with `M-x` `package-install`
   `flycheck-ini-pyinilint`.
@@ -62,7 +69,7 @@ If you don’t have `use-package` then you will need something like:
   '(add-hook 'flycheck-mode-hook 'flycheck-ini-pyinilint-setup))
 ```
 
-#### Install `flycheck-ini-pyinilint` from source
+#### `flycheck-ini-pyinilint` installation from source
 
 If you don’t want to use MELPA you will have to install from source as
 follows:
