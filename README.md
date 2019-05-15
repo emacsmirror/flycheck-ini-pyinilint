@@ -6,7 +6,9 @@ Get INI-file syntax checking in
 [PyINILint](https://gitlab.com/danieljrmay/pyinilint).
 
 Here is a screenshot of `flycheck-ini-pyinilint` in action:
+
 ![Screenshot of Flycheck PyINILint](images/screenshot.png)
+
 You can see that a *duplicate section error* is flagged at line 8.
 
 ## Installation
