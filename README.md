@@ -1,4 +1,7 @@
-# Flycheck PyINILint Integration
+<!-- markdownlint-disable MD033 -->
+# <img src="images/logo.png" width="100" alt="Logo"/> Flycheck PyINILint Integration
+
+[![MELPA](https://melpa.org/packages/flycheck-ini-pyinilint-badge.svg)](https://melpa.org/#/flycheck-ini-pyinilint)
 
 Get INI-file syntax checking in
 [Emacs](https://www.gnu.org/software/emacs/) via
